@@ -1,0 +1,313 @@
+{
+  "V1-Full": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 1002.2785986360441,
+        "ci_low": 855.2471857291804,
+        "ci_high": 1158.8432838929868
+      },
+      "saturation_mae": {
+        "mean": 3.504053130077538e-05,
+        "ci_low": 2.9811513515217937e-05,
+        "ci_high": 4.05938043874417e-05
+      },
+      "pressure_rel_percent": {
+        "mean": 0.004984934735391122,
+        "ci_low": 0.004254669190615653,
+        "ci_high": 0.005761432966584854
+      },
+      "saturation_rel_percent": {
+        "mean": 0.01192056370085907,
+        "ci_low": 0.010136778088746298,
+        "ci_high": 0.013815775002758202
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.008452749218125097,
+      "ci_low": 0.007216713162442064,
+      "ci_high": 0.00975607674713814
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 2.9230660633282146,
+      "ci_low": 0.681859104759862,
+      "ci_high": 7.275775701918317
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 10.209644515988478,
+      "ci_low": 0.5000690522411951,
+      "ci_high": 29.53699035414624
+    },
+    "rollout_failures": 1,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 16.944665700022597,
+    "failure_case_ids": [
+      "sample_069"
+    ],
+    "step100_median_rel_percent": [
+      0.4980611325051044,
+      0.45486590388436837
+    ]
+  },
+  "V2-w/o UNet": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 1969.2718709244386,
+        "ci_low": 1727.9074481277792,
+        "ci_high": 2224.603752237435
+      },
+      "saturation_mae": {
+        "mean": 6.954602298311804e-05,
+        "ci_low": 6.141245688249255e-05,
+        "ci_high": 7.809970575363026e-05
+      },
+      "pressure_rel_percent": {
+        "mean": 0.009796337948492294,
+        "ci_low": 0.008596168602923233,
+        "ci_high": 0.011065622574579395
+      },
+      "saturation_rel_percent": {
+        "mean": 0.02440178562304202,
+        "ci_low": 0.021553711344503672,
+        "ci_high": 0.02738685018567988
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.017099061785767155,
+      "ci_low": 0.015090425375175182,
+      "ci_high": 0.019224897621362008
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 0.8036546145315016,
+      "ci_low": 0.6935143233063272,
+      "ci_high": 0.9208150512680725
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 0.9184057664924681,
+      "ci_low": 0.7907165168015964,
+      "ci_high": 1.0529843021396323
+    },
+    "rollout_failures": 0,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 3.943050400004722,
+    "failure_case_ids": [],
+    "step100_median_rel_percent": [
+      0.6045497841799803,
+      0.6969677577758694
+    ]
+  },
+  "V3-w/o Residual": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 39308.49068689935,
+        "ci_low": 33567.33295124374,
+        "ci_high": 45474.568083753744
+      },
+      "saturation_mae": {
+        "mean": 0.0002327603767324061,
+        "ci_low": 0.00020220295435372987,
+        "ci_high": 0.00026462079517241996
+      },
+      "pressure_rel_percent": {
+        "mean": 0.19549594263950498,
+        "ci_low": 0.16694168405859164,
+        "ci_high": 0.22615731093510805
+      },
+      "saturation_rel_percent": {
+        "mean": 0.0786239791268622,
+        "ci_low": 0.06836768505247628,
+        "ci_high": 0.08937901513472307
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.1370599608831836,
+      "ci_low": 0.11872327715680597,
+      "ci_high": 0.15653855611726492
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 2.0425401419561444,
+      "ci_low": 1.8799249896121761,
+      "ci_high": 2.213666014790153
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 6.3644968792531085,
+      "ci_low": 4.488551109459313,
+      "ci_high": 8.400664279670453
+    },
+    "rollout_failures": 0,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 15.561468700005207,
+    "failure_case_ids": [],
+    "step100_median_rel_percent": [
+      1.7787382619134342,
+      1.9833606201498284
+    ]
+  },
+  "V4-w/o Bias": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 1207.8761555842214,
+        "ci_low": 1053.3239845675503,
+        "ci_high": 1371.8359902093355
+      },
+      "saturation_mae": {
+        "mean": 4.61262163391801e-05,
+        "ci_low": 4.040769026020754e-05,
+        "ci_high": 5.2247998052895655e-05
+      },
+      "pressure_rel_percent": {
+        "mean": 0.006008035693882618,
+        "ci_low": 0.005239777813933176,
+        "ci_high": 0.0068227459912794984
+      },
+      "saturation_rel_percent": {
+        "mean": 0.01592617261546243,
+        "ci_low": 0.013947730538939862,
+        "ci_high": 0.01803475362821953
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.010967104154672525,
+      "ci_low": 0.009605420235739615,
+      "ci_high": 0.012415723267779812
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 1.2559277396910364,
+      "ci_low": 0.9869321740131408,
+      "ci_high": 1.57872019763704
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 0.997345666819541,
+      "ci_low": 0.7737512211284278,
+      "ci_high": 1.3044209685067991
+    },
+    "rollout_failures": 0,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 15.548357500054408,
+    "failure_case_ids": [],
+    "step100_median_rel_percent": [
+      0.7441352281932159,
+      0.6776758782244549
+    ]
+  },
+  "V5-depth=1": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 1341.4884525124537,
+        "ci_low": 1138.3609490477972,
+        "ci_high": 1556.0341564286823
+      },
+      "saturation_mae": {
+        "mean": 4.085022891580095e-05,
+        "ci_low": 3.4831098993416646e-05,
+        "ci_high": 4.727377436821352e-05
+      },
+      "pressure_rel_percent": {
+        "mean": 0.00667211537297787,
+        "ci_low": 0.0056627503738365705,
+        "ci_high": 0.007737490255986296
+      },
+      "saturation_rel_percent": {
+        "mean": 0.013988013700444859,
+        "ci_low": 0.011941688655768954,
+        "ci_high": 0.016170488813457548
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.010330064536711368,
+      "ci_low": 0.008808153356781478,
+      "ci_high": 0.011942303395670912
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 1.4727513267253898,
+      "ci_low": 1.059858129462209,
+      "ci_high": 2.014866257378381
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 1.4618487570074432,
+      "ci_low": 0.8012316501802501,
+      "ci_high": 2.3604953820718664
+    },
+    "rollout_failures": 0,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 6.741483799996786,
+    "failure_case_ids": [],
+    "step100_median_rel_percent": [
+      0.7052086254171719,
+      0.5625774979815538
+    ]
+  },
+  "V6-Independent UNet": {
+    "single_step": {
+      "pressure_mae_pa": {
+        "mean": 5351.7543828833095,
+        "ci_low": 4639.846038981847,
+        "ci_high": 6107.1949200506415
+      },
+      "saturation_mae": {
+        "mean": 0.0001661581932879925,
+        "ci_low": 0.00014472075255883202,
+        "ci_high": 0.00018910802927185347
+      },
+      "pressure_rel_percent": {
+        "mean": 0.02661592290543762,
+        "ci_low": 0.023074575732709945,
+        "ci_high": 0.030370755692630085
+      },
+      "saturation_rel_percent": {
+        "mean": 0.05626999270626696,
+        "ci_low": 0.04904216247508984,
+        "ci_high": 0.0640338637483278
+      }
+    },
+    "combined_rel_percent": {
+      "mean": 0.04144295780585228,
+      "ci_low": 0.03617658807536742,
+      "ci_high": 0.047005792959013824
+    },
+    "rollout_step100_pressure_rel_percent": {
+      "mean": 7.600131419500937,
+      "ci_low": 6.385057010698195,
+      "ci_high": 8.885105039228401
+    },
+    "rollout_step100_saturation_rel_percent": {
+      "mean": 11.036469805539925,
+      "ci_low": 8.605595899648307,
+      "ci_high": 13.632421448609444
+    },
+    "rollout_failures": 0,
+    "nonfinite_trajectories": 0,
+    "elapsed_seconds": 15.644299899984617,
+    "failure_case_ids": [],
+    "step100_median_rel_percent": [
+      5.092117083161232,
+      2.7882927200898022
+    ]
+  },
+  "paired_combined_difference_from_V1_pp": {
+    "V2-w/o UNet": {
+      "mean": 0.00864631256764206,
+      "ci_low": 0.007792973100613116,
+      "ci_high": 0.009533219073908441
+    },
+    "V3-w/o Residual": {
+      "mean": 0.12860721166505854,
+      "ci_low": 0.11129742271171496,
+      "ci_high": 0.14703291308069313
+    },
+    "V4-w/o Bias": {
+      "mean": 0.0025143549365474298,
+      "ci_low": 0.002249808038217083,
+      "ci_high": 0.00279310339040588
+    },
+    "V5-depth=1": {
+      "mean": 0.0018773153185862707,
+      "ci_low": 0.00154621595563097,
+      "ci_high": 0.0022399082431926623
+    },
+    "V6-Independent UNet": {
+      "mean": 0.03299020858772719,
+      "ci_low": 0.028838820563228153,
+      "ci_high": 0.03737775971572764
+    }
+  }
+}

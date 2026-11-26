@@ -1,0 +1,77 @@
+{
+  "test_file": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\independent_20x20_100.h5",
+  "test_sha256": "c83a9a6f9d4f6dc214768f44952ecd1800ffd06e0dca0a9d1062afd6b5604c1d",
+  "normalization": {
+    "permeability": {
+      "mean": 1.605279431690857e-14,
+      "std": 1.0000671300655354e-10,
+      "count": 200000
+    },
+    "porosity": {
+      "mean": 0.2,
+      "std": 1e-10,
+      "count": 200000
+    },
+    "pressure": {
+      "mean": 20096177.877740238,
+      "std": 3774559.962131083,
+      "count": 100000000
+    },
+    "saturation": {
+      "mean": 0.27937564957451266,
+      "std": 0.173797481422599,
+      "count": 100000000
+    }
+  },
+  "normalization_basis": "Reconstructed from all original 500 cases, population std + 1e-10; independent test excluded. Historical exact preprocessing was not saved.",
+  "n_independent_reservoirs": 100,
+  "one_step_transitions_per_case": 499,
+  "rollout_steps": 100,
+  "bootstrap_resamples": 10000,
+  "failure_definition": "Any nonfinite predicted state, or pressure relative error >=100% at any rollout step.",
+  "limitation": "One archived checkpoint per variant; historical training split and seeds unavailable. CI measures test-reservoir variability only.",
+  "torch": "2.9.1+cu128",
+  "device": "NVIDIA GeForce RTX 5060 Ti",
+  "source_hashes": {
+    "ablation_study.py": "7cf79ce8cbae210dc1ae94b0cf25b8431957a712e679d9859909bd610e626eb1",
+    "data_training.py": "a6ee09010880a879e28227f92c5c50024bac7cda2b5b0a3123b7339e1ac5c416"
+  },
+  "checkpoints": {
+    "V1-Full": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v1-full.pth",
+      "sha256": "73c5540b3107635dd3d1a4bc8a5b72024746b53638d4d513d7b33d400be20520",
+      "saved_epochs": 91,
+      "parameters": 1901762
+    },
+    "V2-w/o UNet": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v2-w_o_unet.pth",
+      "sha256": "d4152d56a97d008fbb68acb782da293c9911061a24d7e532f9446794b531ccdf",
+      "saved_epochs": 91,
+      "parameters": 533154
+    },
+    "V3-w/o Residual": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v3-w_o_residual.pth",
+      "sha256": "719084fb6e1f289203e6e34b982348c41c3adbdbe86834750e96baffd1c211a8",
+      "saved_epochs": 91,
+      "parameters": 1901762
+    },
+    "V4-w/o Bias": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v4-w_o_bias.pth",
+      "sha256": "94e96789a9b5544a9d0edf9f2061af7422ade31ea3e2f952771558e234e96892",
+      "saved_epochs": 71,
+      "parameters": 1901634
+    },
+    "V5-depth=1": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v5-depth1.pth",
+      "sha256": "b6855f1f4ec1a0f17fca0b5a97d329c319510aa47fb21e922fcf60af744d0580",
+      "saved_epochs": 91,
+      "parameters": 608642
+    },
+    "V6-Independent UNet": {
+      "path": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\ablation\\checkpoints\\best_v6-independent_unet.pth",
+      "sha256": "072fd084781035b6873faccc858bdf201e58b77950406925d9986310fa1e05a3",
+      "saved_epochs": 31,
+      "parameters": 6007202
+    }
+  }
+}

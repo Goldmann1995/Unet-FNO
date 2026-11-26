@@ -1,0 +1,15 @@
+{
+  "reuse": "visual conventions only; independently drawn from implementation",
+  "primary_reference": {
+    "title": "U-Net: Convolutional Networks for Biomedical Image Segmentation",
+    "figure": 1,
+    "url": "https://arxiv.org/pdf/1505.04597"
+  },
+  "related_reference": {
+    "title": "U-FNO: An enhanced Fourier neural operator-based deep-learning model for multiphase flow",
+    "figure": 2,
+    "doi": "10.1016/j.advwatres.2022.104180"
+  },
+  "implementation": "data_training.py: AdaptiveUNet; 3 encoder blocks, 2 average pools, 1 bottleneck convolution, 3 skip-connected decoder blocks, identity residual; one shared instance across 4 Fourier layers",
+  "feature_map_geometry": "schematic sizes encode resolution ordering; widths are schematic, channel counts explicit"
+}

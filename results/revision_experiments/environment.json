@@ -1,0 +1,51 @@
+{
+  "cpu": {
+    "Name": "Intel(R) Core(TM) i7-14700KF",
+    "NumberOfCores": 20,
+    "NumberOfLogicalProcessors": 28
+  },
+  "gpu": "NVIDIA GeForce RTX 5060 Ti, 16311 MiB, 610.88",
+  "python": "3.10.19 (main, Oct 14 2025, 21:20:23) [MSC v.1944 64 bit (AMD64)]",
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "cudnn": 91002,
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "h5py": "3.15.1",
+  "cpu_threads": 1,
+  "cudnn_benchmark": true,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "checkpoints": {
+    "FNO": {
+      "file": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\checkpoints\\best_fno.pth",
+      "sha256": "71276ff9f8e2b14feb3baf8ced50460d354f32636814f96094155b2e2adeb80f",
+      "n_params": 533154,
+      "saved_training_epochs": 91
+    },
+    "U-FNO": {
+      "file": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\checkpoints\\best_u_fno.pth",
+      "sha256": "32fb00d0195da2628bfd27042edc72e76b85a76145fe35f241fabea85851c74d",
+      "n_params": 2024482,
+      "saved_training_epochs": 100
+    },
+    "UNet-FNO": {
+      "file": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\checkpoints\\best_unet_fno.pth",
+      "sha256": "73c5540b3107635dd3d1a4bc8a5b72024746b53638d4d513d7b33d400be20520",
+      "n_params": 1901762,
+      "saved_training_epochs": 91
+    }
+  },
+  "original_source_file": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\reservoir_fno_dataset_20x20\\reservoir_fno_20260319_193856_samples_500.h5",
+  "fine_grid_file": "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\reservoir_fno_dataset_40x40\\reservoir_fno_20260322_175636_samples_100.h5",
+  "seed": 20261117,
+  "bootstrap_resamples": 10000,
+  "new_data_file": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\independent_20x20_100.h5",
+  "normalization_source": "entire original source file, reproducing archived checkpoint preprocessing; independent test data excluded",
+  "source_sha256": {
+    "data_generation.py": "b52dcc21ca3b1dbbe1e814f87c7445e34c038c57258d1901ed6968c75e50e1d0",
+    "data_training.py": "a6ee09010880a879e28227f92c5c50024bac7cda2b5b0a3123b7339e1ac5c416",
+    "fno.py": "30488f98089202a40eedd45701b3ad6a81ee78661cae11764d27f5a45af6bc0d",
+    "ufno.py": "f5c144fc433613d9c4a8478b24dca820829a01ee6ec63187d3e8b8897651c1dd",
+    "ablation_study.py": "7cf79ce8cbae210dc1ae94b0cf25b8431957a712e679d9859909bd610e626eb1"
+  }
+}

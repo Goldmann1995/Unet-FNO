@@ -1,0 +1,11 @@
+{
+  "model": "FNO",
+  "seed": 43,
+  "n_params": 533154,
+  "epochs_completed": 100,
+  "best_epoch": 100,
+  "best_validation_loss": 0.004562916643917561,
+  "elapsed_seconds": 43.787608699989505,
+  "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\FNO_seed43_best.pt",
+  "sha256": "ebcd0e6bf6a08b385cc9ac06797ba7a3bdbd60bf4d60e782519fdc0d3ef4de5a"
+}

@@ -1,0 +1,134 @@
+[
+  {
+    "model": "FNO",
+    "seed": 42,
+    "n_params": 533154,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.005351103376597166,
+    "elapsed_seconds": 41.35956609999994,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\FNO_seed42_best.pt",
+    "sha256": "bb7c1709a3b08e5b321c7c5f30eba29bb0351af0ebce8d45daec886dd05f518d"
+  },
+  {
+    "model": "U-FNO",
+    "seed": 42,
+    "n_params": 2024482,
+    "epochs_completed": 100,
+    "best_epoch": 96,
+    "best_validation_loss": 0.009282380044460296,
+    "elapsed_seconds": 124.09660589997657,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_seed42_best.pt",
+    "sha256": "b5aac68b849e4df4c74ea35a63ae327d4fc56314f917636b2ff1cc64d48b3a54"
+  },
+  {
+    "model": "U-FNO-LR",
+    "seed": 42,
+    "n_params": 1805890,
+    "epochs_completed": 59,
+    "best_epoch": 39,
+    "best_validation_loss": 0.01476837731897831,
+    "elapsed_seconds": 96.0473472000449,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_LR_seed42_best.pt",
+    "sha256": "af4eaa51f2728990b6209efc1d14022a95a748608b04548e06ff2901947e672f"
+  },
+  {
+    "model": "UNet-FNO",
+    "seed": 42,
+    "n_params": 1901762,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.004438833817839622,
+    "elapsed_seconds": 351.2204858000041,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\UNet_FNO_seed42_best.pt",
+    "sha256": "68ab7aa26ae2eb24895d167fd8148444fd73713b6844d819f1ca20d98a1d7d49"
+  },
+  {
+    "model": "FNO",
+    "seed": 43,
+    "n_params": 533154,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.004562916643917561,
+    "elapsed_seconds": 43.787608699989505,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\FNO_seed43_best.pt",
+    "sha256": "ebcd0e6bf6a08b385cc9ac06797ba7a3bdbd60bf4d60e782519fdc0d3ef4de5a"
+  },
+  {
+    "model": "U-FNO",
+    "seed": 43,
+    "n_params": 2024482,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.00984381429851055,
+    "elapsed_seconds": 125.68220819998533,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_seed43_best.pt",
+    "sha256": "dfebcfff9cb49d02709c335603a791bd8f3d60cabb8a535c77153ae1d63d22a0"
+  },
+  {
+    "model": "U-FNO-LR",
+    "seed": 43,
+    "n_params": 1805890,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.009509555641561746,
+    "elapsed_seconds": 157.97182580002118,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_LR_seed43_best.pt",
+    "sha256": "ab889e2f26827a9f5dcfc5259fbd4adc54e1f791461597deffce6c3b8685041f"
+  },
+  {
+    "model": "UNet-FNO",
+    "seed": 43,
+    "n_params": 1901762,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.004123476315289736,
+    "elapsed_seconds": 344.3522087999736,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\UNet_FNO_seed43_best.pt",
+    "sha256": "84846c3ea6f8b868659728e8baef53c7d88ad0e346361bfa9f1223ec9ce9dea6"
+  },
+  {
+    "model": "FNO",
+    "seed": 44,
+    "n_params": 533154,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.005157601945102215,
+    "elapsed_seconds": 40.61353129998315,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\FNO_seed44_best.pt",
+    "sha256": "fe2267b8ba8496fd5b27cd9dd2b32055f8e100acbaa078d30ade4d09252ce0bd"
+  },
+  {
+    "model": "U-FNO",
+    "seed": 44,
+    "n_params": 2024482,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.01124992648139596,
+    "elapsed_seconds": 125.71270739997271,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_seed44_best.pt",
+    "sha256": "618230c3138a7f8053e1330cafcd2a25e4ea9ee66d6f2debe141427ae14ccaa5"
+  },
+  {
+    "model": "U-FNO-LR",
+    "seed": 44,
+    "n_params": 1805890,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.01161608537659049,
+    "elapsed_seconds": 159.55246669996995,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\U_FNO_LR_seed44_best.pt",
+    "sha256": "a29c91703fcf58393ab5ff87381194ec0ffec73feba50099fd6b2a7e4772220c"
+  },
+  {
+    "model": "UNet-FNO",
+    "seed": 44,
+    "n_params": 1901762,
+    "epochs_completed": 100,
+    "best_epoch": 100,
+    "best_validation_loss": 0.004622521223500371,
+    "elapsed_seconds": 342.9552176000434,
+    "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\UNet_FNO_seed44_best.pt",
+    "sha256": "645cd71a5b1b61846642afd1c2c948d7bed943d7d8057945470d915ac6d3b46a"
+  }
+]

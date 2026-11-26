@@ -1,0 +1,14 @@
+{
+  "inputs": {
+    "checkpoint_sha256": "fe2267b8ba8496fd5b27cd9dd2b32055f8e100acbaa078d30ade4d09252ce0bd",
+    "normalization_sha256": "7ebc5252e684f203c9b39f046be45da657dcd0d02cd273df0cdd54395d2d7986",
+    "evaluator_sha256": "1f962dbb3b79aa9c6911958f51f246760c954a5426d69d143f60ce67af796075",
+    "data_sha256": {
+      "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\reservoir_fno_dataset_20x20\\reservoir_fno_20260319_193856_samples_500.h5": "903a0a370c804bad5ccb6f8d29e4318ecca86429ba4a8ad1e6e0f23f24725271",
+      "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\independent_20x20_100.h5": "c83a9a6f9d4f6dc214768f44952ecd1800ffd06e0dca0a9d1062afd6b5604c1d",
+      "C:\\Users\\glodmann\\deeponet-fno\\Unet-FNO\\reservoir_fno_dataset_40x40\\reservoir_fno_20260322_175636_samples_100.h5": "a14f96e3116149606f17ddb9df7e4d7d94e6aa2de59ca99e74e9e9397a5a557c"
+    }
+  },
+  "result_sha256": "41dfa5dcdc2429450cb178fc86cd2f574da8f6e78540696074044a6ae8cd32d8",
+  "predictions_sha256": "3501d26640f1d88e21485a7cfb5780e4d5dabe57c502c439ef50bed4a73b5552"
+}

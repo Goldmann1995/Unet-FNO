@@ -1,0 +1,47 @@
+Controlled low-resolution U-FNO comparison — approved follow-up scope
+
+User approved proceeding with the proposed low-resolution adaptation and fair
+retraining comparison. Work remains in the requested current manuscript folder.
+Original model code, archived weights and previous measurements are preserved.
+
+Architecture
+U-FNO-LR retains the original six Fourier layers, width32, modes8, original
+spectral convolutions, activations, projection head and last-three-layer U-Net
+placement. Replace only its U-Net branches with two stride-two encoder levels
+(20->10->5), BN/LeakyReLU encoder blocks, and bilinear size-matched decoding
+with convolution and skip concatenation. No transposed convolution or cropping.
+This is a combined depth/decoder adaptation, not an isolated mechanism test.
+
+Data and preprocessing
+Original 500 realisations: saved seeded split, 400 train / 100 validation.
+New coarse100: disjoint independent test; no checkpoint selection or tuning.
+Existing fine100: secondary resolution-transfer test with fixed train statistics.
+Fit channel mean/std on training IDs only. Constant porosity maps to zero with
+scale1. Other fields use their actual std (do not add a dimensionally inappropriate
+1e-10 offset to permeability measured near1e-14). Preserve parameters in JSON.
+The same normalisation is used for all models and datasets.
+
+Training budget, fixed before training
+Models FNO, U-FNO, U-FNO-LR, UNet-FNO. Seeds42/43/44.
+Maximum100 epochs, batch128, AdamW lr1e-3 wd1e-4, cosine lr to1e-6.
+Gradient clipping norm1 after backward. Float32 training.
+Each epoch uses16 distinct uniformly drawn transitions per training realisation,
+6400 pairs/epoch, same deterministic sampled pairs/order across all models for
+the same seed. This is a new matched-budget experiment, not reproduction of
+the original full-window experiment. Full available training trajectories remain
+eligible for sampling. Validation uses32 fixed evenly spaced transitions per
+realisation (3200 pairs). Save the lowest validation-loss checkpoint; early stop
+after20 non-improving epochs. No test queries until all12 trainings finish.
+One fixed realisation split across seeds; seeds vary init and temporal batches.
+
+Evaluation and reporting
+Full499-transition coarse test and fine test, all100 realisations per dataset.
+100-step recursive coarse rollout, no clipping or exclusions, all100 realisations.
+Preserve per-seed/per-realisation data, checkpoint hashes, full training logs,
+elapsed time and final failures/nonfinite cases. Report training-seed mean and
+SD separately from realisation uncertainty; bootstrap paired realisation-level
+differences after averaging fixed-seed errors (conditional on these3 runs).
+Do not turn3 training seeds into300 independent reservoir realisations.
+Runtime and parameter comparison uses each model's seed42 validation-selected
+checkpoint, a prespecified representative run, never the best test result.
+Update the manuscript/response from actual results, including adverse outcomes.

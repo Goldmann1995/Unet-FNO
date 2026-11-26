@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "verified_models": [
+    "V1-Full",
+    "V2-w/o UNet",
+    "V3-w/o Residual",
+    "V4-w/o Bias",
+    "V5-depth=1",
+    "V6-Independent UNet"
+  ],
+  "checks": [
+    "checkpoint and test data hashes",
+    "array shapes and case IDs",
+    "all saved rollout errors recomputed from predictions",
+    "failure counts",
+    "single-step summary means",
+    "CSV row counts"
+  ]
+}

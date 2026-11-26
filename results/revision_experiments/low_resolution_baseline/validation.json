@@ -1,0 +1,23 @@
+{
+  "training_runs": 12,
+  "models": [
+    "FNO",
+    "U-FNO",
+    "U-FNO-LR",
+    "UNet-FNO"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "train_validation_overlap": 0,
+  "training_field_duplicates_in_independent_test": 0,
+  "coarse_and_fine_rows_each": 1200,
+  "recursive_error_rows": 120000,
+  "test_reservoir_units": 100,
+  "best_checkpoints": "selected only by validation; verified against complete histories",
+  "rollout_errors": "recomputed from all saved predictions, including nonfinite outcomes",
+  "compile": "no undefined references/citations or overfull boxes",
+  "word_responses": 11
+}

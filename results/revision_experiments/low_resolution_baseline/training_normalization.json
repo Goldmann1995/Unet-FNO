@@ -1,0 +1,30 @@
+{
+  "permeability": {
+    "mean": 1.6029342200551187e-14,
+    "std": 6.65526882970717e-15,
+    "scale": 6.65526882970717e-15,
+    "constant": false,
+    "count": 160000
+  },
+  "porosity": {
+    "mean": 0.2,
+    "std": 0.0,
+    "scale": 1.0,
+    "constant": true,
+    "count": 160000
+  },
+  "pressure": {
+    "mean": 20096224.410243113,
+    "std": 3770948.811260501,
+    "scale": 3770948.811260501,
+    "constant": false,
+    "count": 80000000
+  },
+  "saturation": {
+    "mean": 0.27937630323905044,
+    "std": 0.17379855240476252,
+    "scale": 0.17379855240476252,
+    "constant": false,
+    "count": 80000000
+  }
+}

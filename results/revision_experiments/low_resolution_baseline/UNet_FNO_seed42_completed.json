@@ -1,0 +1,11 @@
+{
+  "model": "UNet-FNO",
+  "seed": 42,
+  "n_params": 1901762,
+  "epochs_completed": 100,
+  "best_epoch": 100,
+  "best_validation_loss": 0.004438833817839622,
+  "elapsed_seconds": 351.2204858000041,
+  "checkpoint": "C:\\Users\\glodmann\\Downloads\\main\\revision_experiments\\low_resolution_baseline\\checkpoints\\UNet_FNO_seed42_best.pt",
+  "sha256": "68ab7aa26ae2eb24895d167fd8148444fd73713b6844d819f1ca20d98a1d7d49"
+}

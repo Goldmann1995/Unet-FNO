@@ -1,0 +1,123 @@
+{
+  "reservoirs": 100,
+  "steps": 100,
+  "injected_m3_per_reservoir": 62.5,
+  "shock_sw": 0.6379488651828502,
+  "max_fractional_flow_slope": 4.882265657673502,
+  "replay_max": 1.1102230246251565e-16,
+  "mean_budget": {
+    "replay_max": 1.1102230246251565e-16,
+    "mixing_m3": 61.124884260972046,
+    "clipping_m3": -62.46668693018218,
+    "physical_compression_m3": 0.4768222196210016,
+    "net_well_m3": 62.49999999999373,
+    "max_advective_CFL": 0.6097903682538852
+  },
+  "max_inflow_CFL": 0.6099116769248424,
+  "reference": {
+    "mean_abs_step_residual_pct": 1.4414174816777459,
+    "signed_cumulative_residual_m3": -0.884053338373984,
+    "retreat_case_percent": 0.0,
+    "retreat_events": 0,
+    "lower_pct": 0.0,
+    "upper_pct": 0.0
+  },
+  "runs": {
+    "FNO_seed42_rollout_predictions": {
+      "mean_abs_step_residual_pct": 308.35764704172095,
+      "signed_cumulative_residual_m3": 188.5042804537525,
+      "retreat_case_percent": 100.0,
+      "retreat_events": 3648,
+      "lower_pct": 38.005925000000005,
+      "upper_pct": 0.801175
+    },
+    "FNO_seed43_rollout_predictions": {
+      "mean_abs_step_residual_pct": 4047.2195247488003,
+      "signed_cumulative_residual_m3": 2526.3370044892813,
+      "retreat_case_percent": 85.0,
+      "retreat_events": 5307,
+      "lower_pct": 40.971225,
+      "upper_pct": 4.424575
+    },
+    "FNO_seed44_rollout_predictions": {
+      "mean_abs_step_residual_pct": 793.4916614736214,
+      "signed_cumulative_residual_m3": 492.10127156483065,
+      "retreat_case_percent": 100.0,
+      "retreat_events": 4756,
+      "lower_pct": 39.51095,
+      "upper_pct": 1.144125
+    },
+    "U_FNO_LR_seed42_rollout_predictions": {
+      "mean_abs_step_residual_pct": 24.327516175168306,
+      "signed_cumulative_residual_m3": 2.4240881811936545,
+      "retreat_case_percent": 5.0,
+      "retreat_events": 21,
+      "lower_pct": 34.7315,
+      "upper_pct": 0.033925
+    },
+    "U_FNO_LR_seed43_rollout_predictions": {
+      "mean_abs_step_residual_pct": 11.138792064891394,
+      "signed_cumulative_residual_m3": -4.2236870128602595,
+      "retreat_case_percent": 2.0,
+      "retreat_events": 2,
+      "lower_pct": 50.4784,
+      "upper_pct": 0.136275
+    },
+    "U_FNO_LR_seed44_rollout_predictions": {
+      "mean_abs_step_residual_pct": 16.8670028962728,
+      "signed_cumulative_residual_m3": -3.646424321616398,
+      "retreat_case_percent": 6.0,
+      "retreat_events": 13,
+      "lower_pct": 45.6272,
+      "upper_pct": 0.10212500000000001
+    },
+    "U_FNO_seed42_rollout_predictions": {
+      "mean_abs_step_residual_pct": 13.840201892288045,
+      "signed_cumulative_residual_m3": -2.2901261350995554,
+      "retreat_case_percent": 1.0,
+      "retreat_events": 9,
+      "lower_pct": 42.546575,
+      "upper_pct": 0.07544999999999999
+    },
+    "U_FNO_seed43_rollout_predictions": {
+      "mean_abs_step_residual_pct": 28.06208386390973,
+      "signed_cumulative_residual_m3": 0.6653825784488467,
+      "retreat_case_percent": 12.0,
+      "retreat_events": 160,
+      "lower_pct": 49.1895,
+      "upper_pct": 0.1574
+    },
+    "U_FNO_seed44_rollout_predictions": {
+      "mean_abs_step_residual_pct": 13.64500412722642,
+      "signed_cumulative_residual_m3": -4.180175497371539,
+      "retreat_case_percent": 2.0,
+      "retreat_events": 2,
+      "lower_pct": 44.808175,
+      "upper_pct": 0.1042
+    },
+    "UNet_FNO_seed42_rollout_predictions": {
+      "mean_abs_step_residual_pct": 5.168709535393786,
+      "signed_cumulative_residual_m3": -1.7337002494575235,
+      "retreat_case_percent": 0.0,
+      "retreat_events": 0,
+      "lower_pct": 45.743,
+      "upper_pct": 0.10629999999999999
+    },
+    "UNet_FNO_seed43_rollout_predictions": {
+      "mean_abs_step_residual_pct": 5.581973508544231,
+      "signed_cumulative_residual_m3": -1.9888338606602844,
+      "retreat_case_percent": 1.0,
+      "retreat_events": 1,
+      "lower_pct": 45.73065,
+      "upper_pct": 0.13194999999999998
+    },
+    "UNet_FNO_seed44_rollout_predictions": {
+      "mean_abs_step_residual_pct": 5.329162644710812,
+      "signed_cumulative_residual_m3": -1.978531468342674,
+      "retreat_case_percent": 0.0,
+      "retreat_events": 0,
+      "lower_pct": 44.96775,
+      "upper_pct": 0.12812500000000002
+    }
+  }
+}

@@ -1,0 +1,59 @@
+Review comments 6, 9, 10 — reproducible analysis protocol
+
+Goal: produce measured results for the current-directory manuscript and response.
+Existing checkpoints and original experiment data remain unchanged.
+No retraining is claimed. The historical split/selection limitations remain.
+
+Task 1 — Audit and independent simulation data
+Existing 20x20 100-file duplicates 100 permeability fields in the 500-file.
+Generate 100 fresh 20x20 realisations with per-realisation seeds 2026111700+i.
+Patterns are assigned cyclically gaussian/uniform/lognormal (34/33/33).
+Use the original IMPES solver, 500 states, dt=10800 s, 100x100x1 m domain.
+Check permeability hashes against ALL 500 source-file realisations.
+Save seeds, patterns, IDs, wall times, hashes, and all reference states.
+
+Task 2 — Frozen-checkpoint evaluation
+Use root checkpoints/best_fno.pth, best_u_fno.pth, best_unet_fno.pth,
+the same filenames selected by the original rollout entry point.
+Record SHA256. Strictly load state dicts and preserve model architecture.
+Recover fixed normalization from the original 500-realisation source file,
+matching the original implementation including its +1e-10 std offset.
+Do not estimate any normalisation from either new test set.
+100-step rollout starts at stored reference index 0 and targets indices 1..100.
+Do not clip states or omit failed runs. Save per-realisation/per-step errors.
+Bootstrap realisations (n=100, 10000 resamples, seed=20261117), percentile 95%
+pointwise intervals for mean relative errors. Steps are repeated measures.
+Intervals condition on the frozen checkpoints, not training-seed uncertainty.
+
+Task 3 — Fine-grid transfer
+Evaluate ALL 100 fields in the existing 40x40 file, ALL 499 transitions each.
+Fixed original normalization and unchanged checkpoint parameters.
+Save every evaluated ID/hash and per-realisation MAE/relative errors.
+Report equal-realisation averages and percentile bootstrap intervals.
+Describe grid-cell-based smoothing and absence of paired permeability functions.
+
+Task 4 — Timing
+Record CPU, GPU, driver, Python, torch, numpy/scipy and hardware threads.
+GPU single-step batch1/batch128: 20 warmups then 100 CUDA-event repetitions.
+Matched 100-step trajectory: first ten new realisations; same initial stored
+state, fixed dt, identical pressure/saturation output length (100 updates).
+CPU solver benchmark excludes grid construction and initial reference state.
+Surrogate wall timing includes input normalization, host/device transfers,
+autoregression and returning all predicted fields; warmup excluded.
+Report measured medians and IQR, paired per-realisation speedups. Do not
+extrapolate batch latency to trajectory timing.
+
+Task 5 — Manuscript and reviewer reply
+Back up current tex, PDFs, DOCX and modified figure assets before edits.
+Replace rollout and fine-grid results with the new independent evaluations.
+Keep historical single-step/ablation comparisons visibly distinguished.
+Replace efficiency discussion with measured units, hardware and matched timing.
+Regenerate affected figures, update cross-references and reply comments 6/9/10.
+Compile clean/marked manuscripts; check numerical/cross-file consistency.
+
+Validation
+Test relative-error denominator and units against a hand-worked example.
+Test constant bootstrap data gives a degenerate exact interval.
+Test sample hashing, all IDs/steps retained, no training-field hash overlap.
+Validate finite/nonfinite reporting without silently excluding failures.
+Use Python/matplotlib, following the existing repository plotting backend.

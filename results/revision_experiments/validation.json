@@ -1,0 +1,9 @@
+{
+  "new_realisations": 100,
+  "original_field_duplicates": 0,
+  "unique_model_realisation_step_records": 30000,
+  "fine_grid_transitions_per_model": 49900,
+  "word_numbered_responses": 11,
+  "clean_and_marked_compile_diagnostics": "no undefined references/citations or overfull boxes",
+  "checkpoint_and_solver_source_hashes": "unchanged"
+}

@@ -1,0 +1,33 @@
+{
+  "FNO": {
+    "entries": 91,
+    "min_epoch": 91,
+    "test_loss_at_epochs_71_81_91": [
+      0.11432078114877908,
+      0.5329229598626112,
+      0.10558012487987677
+    ],
+    "logged_optimizer_lr": 2.5447270110570814e-05
+  },
+  "U-FNO": {
+    "entries": 100,
+    "min_epoch": 91,
+    "test_loss_at_epochs_71_81_91": [
+      0.22821563304616854,
+      0.7154370659436935,
+      0.21673589772903
+    ],
+    "logged_optimizer_lr": 0.0010000000000000178
+  },
+  "UNet-FNO": {
+    "entries": 91,
+    "min_epoch": 91,
+    "test_loss_at_epochs_71_81_91": [
+      0.00769553366512693,
+      0.039422043732319695,
+      0.007256802456984774
+    ],
+    "logged_optimizer_lr": 2.5447270110570814e-05
+  },
+  "identical_image_pixels": true
+}
