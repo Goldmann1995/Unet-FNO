@@ -5,6 +5,22 @@ Includes the simulator, training pipeline, ablations and supplementary experimen
 
 Repository: https://github.com/Goldmann1995/Unet-FNO
 
+## Citation
+
+If you use this code in your research, please cite the accompanying manuscript:
+
+Kai Wang, Hui Zhao, Zhicheng Yang, Guo Li, Shaofeng Gao, Yue He, and Weiren Mo.
+*UNet-FNO: Single-Step and Recursive Prediction of Reservoir Pressure and Water Saturation.*
+
+```bibtex
+@misc{wang_unet_fno,
+  title = {{UNet-FNO}: Single-Step and Recursive Prediction of Reservoir Pressure and Water Saturation},
+  author = {Wang, Kai and Zhao, Hui and Yang, Zhicheng and Li, Guo and Gao, Shaofeng and He, Yue and Mo, Weiren},
+  note = {Manuscript; accompanying code available on GitHub},
+  howpublished = {\url{https://github.com/Goldmann1995/Unet-FNO}}
+}
+```
+
 ## Installation
 
 Use Python 3.10+ in a virtual environment:
